@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_coffee_product_user,access.coffee.product.user,model_coffee_shop_product,base.group_user,1,1,1,1
+access_coffee_employee_user,access.coffee.employee.user,model_coffee_shop_employee,base.group_user,1,1,1,1
+access_coffee_ingredient_user,access.coffee.ingredient.user,model_coffee_shop_ingredient,base.group_user,1,1,1,1
+access_coffee_recipe_line_user,access.coffee.recipe.line.user,model_coffee_shop_recipe_line,base.group_user,1,1,1,1
+access_coffee_order_user,access.coffee.order.user,model_coffee_shop_order,base.group_user,1,1,1,1
+access_coffee_order_line_user,access.coffee.order.line.user,model_coffee_shop_order_line,base.group_user,1,1,1,1

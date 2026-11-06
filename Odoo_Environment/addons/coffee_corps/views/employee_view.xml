@@ -1,0 +1,50 @@
+<odoo>
+    <!-- Employee List View -->
+    <record id="view_coffee_employee_list" model="ir.ui.view">
+        <field name="name">coffee.shop.employee.list</field>
+        <field name="model">coffee.shop.employee</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="role"/>
+                <field name="phone"/>
+                <field name="email"/>
+                <field name="hire_date"/>
+                <field name="active"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Employee Form View -->
+    <record id="view_coffee_employee_form" model="ir.ui.view">
+        <field name="name">coffee.shop.employee.form</field>
+        <field name="model">coffee.shop.employee</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group string="Personal Information">
+                            <field name="name"/>
+                            <field name="phone"/>
+                            <field name="email"/>
+                        </group>
+                        <group string="Employment Information">
+                            <field name="role"/>
+                            <field name="hire_date"/>
+                            <field name="salary"/>
+                            <field name="active"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Employee Action -->
+    <record id="action_coffee_employee"
+            model="ir.actions.act_window">
+        <field name="name">Employees</field>
+        <field name="res_model">coffee.shop.employee</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

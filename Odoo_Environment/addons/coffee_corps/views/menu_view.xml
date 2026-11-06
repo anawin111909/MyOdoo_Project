@@ -1,0 +1,53 @@
+<odoo>
+    <!-- Main Coffee Corps Menu -->
+    <menuitem
+        id="menu_coffee_corps_root"
+        name="Coffee Corps"
+        sequence="10"
+    />
+
+    <!-- Products Menu -->
+    <menuitem
+        id="menu_coffee_products"
+        name="Products"
+        parent="menu_coffee_corps_root"
+        action="action_coffee_product"
+        sequence="10"
+    />
+
+    <!-- Employees Menu -->
+    <menuitem
+        id="menu_coffee_employees"
+        name="Employees"
+        parent="menu_coffee_corps_root"
+        action="action_coffee_employee"
+        sequence="20"
+    />
+
+    <!-- Ingredients Menu -->
+    <menuitem
+        id="menu_coffee_ingredients"
+        name="Ingredients"
+        parent="menu_coffee_corps_root"
+        action="action_coffee_ingredient"
+        sequence="30"
+    />
+    
+    <!-- Recipes Menu -->
+    <menuitem
+        id="menu_coffee_recipes"
+        name="Recipes"
+        parent="menu_coffee_corps_root"
+        action="action_coffee_recipe_line"
+        sequence="35"
+    />
+
+    <!-- Orders Menu -->
+    <menuitem
+        id="menu_coffee_orders"
+        name="Orders"
+        parent="menu_coffee_corps_root"
+        action="action_coffee_order"
+        sequence="40"
+    />
+</odoo>

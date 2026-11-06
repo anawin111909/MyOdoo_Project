@@ -1,0 +1,49 @@
+<odoo>
+    <!-- Ingredient List View -->
+    <record id="view_coffee_ingredient_list" model="ir.ui.view">
+        <field name="name">coffee.shop.ingredient.list</field>
+        <field name="model">coffee.shop.ingredient</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="unit"/>
+                <field name="quantity"/>
+                <field name="minimum_quantity"/>
+                <field name="cost_per_unit"/>
+                <field name="active"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Ingredient Form View -->
+    <record id="view_coffee_ingredient_form" model="ir.ui.view">
+        <field name="name">coffee.shop.ingredient.form</field>
+        <field name="model">coffee.shop.ingredient</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group string="Ingredient Information">
+                            <field name="name"/>
+                            <field name="unit"/>
+                            <field name="active"/>
+                        </group>
+                        <group string="Stock Information">
+                            <field name="quantity"/>
+                            <field name="minimum_quantity"/>
+                            <field name="cost_per_unit"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Ingredient Action -->
+    <record id="action_coffee_ingredient"
+            model="ir.actions.act_window">
+        <field name="name">Ingredients</field>
+        <field name="res_model">coffee.shop.ingredient</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>
